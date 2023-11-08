@@ -1,0 +1,14 @@
+# DB.
+db.sqlite3
+
+# Virtual environment.
+venv
+
+# Other programs.
+geckodriver.exe
+
+# Media files.
+media
+
+# Python byte code.
+__pycache__
