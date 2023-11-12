@@ -4,9 +4,6 @@ db.sqlite3
 # Virtual environment.
 venv
 
-# Other programs.
-geckodriver.exe
-
 # Media files.
 media
 
