@@ -67,8 +67,8 @@ class NewVisitorTest(LiveServerTestCase):
 		inputbox.send_keys(Keys.ENTER)
 		
 		# Страница снова обновляется, и теперь показывает оба элемента ее списка.
-		self.wait_for_row_in_list_table('1: Купить павлиньи перья')
 		self.wait_for_row_in_list_table('2: Сделать мушку из павлиньих перьев')
+		self.wait_for_row_in_list_table('1: Купить павлиньи перья')
 		
 		# Эдит интересно, запомнит ли сайт ее список. Далее она видит, что сайт сгенерировал для нее уникальный URL-адрес - об этом выводится небольшой текст с обьяснением.
 		self.fail('Закончить тест!')
@@ -103,6 +103,7 @@ class NewVisitorTest(LiveServerTestCase):
 
 		# Фрэнсис начинает новый список, вводя новый элемент. Он менее интересен, чем список Эдит.
 		inputbox = self.browser.find_element(By.ID, 'id_new_item')
+		inputbox.send_keys('Купить молоко')
 		inputbox.send_keys(Keys.ENTER)
 		self.wait_for_row_in_list_table('1: Купить молоко')
 
