@@ -1,11 +1,12 @@
 # DB.
+database/
 db.sqlite3
 
 # Virtual environment.
-venv
+venv/
 
 # Media files.
-media
+media/
 
 # Python byte code.
-__pycache__
+__pycache__/
